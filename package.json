@@ -1,0 +1,24 @@
+{
+  "name": "tenaciousp",
+  "version": "0.0.1",
+  "description": "Promises that don't quit",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebenpack/tenaciousp"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd tests/tests.js",
+    "test:watch": "npm run test -- --watch ",
+    "install": "tsc src/main.ts --module commonjs --outDir src"
+  },
+  "author": "ebenpack",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
